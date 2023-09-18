@@ -29,4 +29,12 @@ class ArrayOfInts3SmallestIntsTest {
 
         assertEquals(0,sumOf3SmallestInts);
     }
+
+    @Test
+    void sumOf3SmallestInts_smallArray_returnsSum() {
+        ArrayOfInts arrayOfInts = new ArrayOfInts();
+        int sumOf3SmallestInts = arrayOfInts.sumOf3SmallestInts(new int[] {5,6});
+
+        assertEquals(11,sumOf3SmallestInts);
+    }
 }
